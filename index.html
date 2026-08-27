@@ -2,1663 +2,618 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Portfolio Fajar Saputra - Web Developer">
-
-    <meta
-        name="author"
-        content="Fajar Saputra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Fajar Saputra - Web Developer">
+    <meta name="author" content="Fajar Saputra">
 
     <title>Fajar Saputra | Web Developer</title>
 
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-    <link
-        rel="stylesheet"
-        href="style.css">
-
+    <!-- CSS Terpisah -->
+    <link rel="stylesheet" href="style.css?v=1">
 </head>
-
 
 <body>
 
-
 <header class="navbar">
-
     <div class="container">
-
-        <a
-            href="#home"
-            class="logo">
-
+        <a href="#home" class="logo">
             <i class="fa-solid fa-code"></i>
-
             Fajar<span>Saputra</span>
-
         </a>
 
-
         <!-- NAVIGATION -->
-
         <nav>
-
             <ul class="nav-menu">
-
-                <li>
-                    <a
-                        href="#home"
-                        class="active">
-
-                        Home
-
-                    </a>
+                <li><a href="#home" class="active" data-i18n="navHome">Home</a></li>
+                <li><a href="#about" data-i18n="navAbout">About</a></li>
+                <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+                <li><a href="#services" data-i18n="navServices">Services</a></li>
+                <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                <!-- BILINGUAL SWITCH BUTTON -->
+                <li class="lang-switch">
+                    <a href="#" id="lang-switch-btn">EN</a>
                 </li>
-
-                <li>
-                    <a href="#about">
-
-                        About
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#skills">
-
-                        Skills
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects">
-
-                        Projects
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-
-                        Contact
-
-                    </a>
-                </li>
-
             </ul>
-
         </nav>
 
-
-        <!-- MOBILE MENU -->
-
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Buka menu">
-
+        <!-- MOBILE MENU BUTTON -->
+        <button class="menu-toggle" type="button" aria-label="Buka menu">
             <i class="fa-solid fa-bars"></i>
-
         </button>
-
     </div>
-
 </header>
 
 <main>
 
-
 <!-- =========================================================
      HERO
 ========================================================= -->
-
-<section
-    class="hero"
-    id="home">
-
-
+<section class="hero" id="home">
     <div class="container">
-
-
         <div class="hero-grid">
-
-
             <div class="hero-content reveal">
-
-
                 <span class="hero-label">
-
                     <i class="fa-solid fa-code"></i>
-
                     WEB DEVELOPER
-
                 </span>
-
-
                 <h1>
-
                     Hello, I'm
-
                     <br>
-
-                    <span>
-                        Fajar Saputra
-                    </span>
-
+                    <span>Fajar Saputra</span>
                 </h1>
-
-
-                <h2>
-
-                    Web Developer
-
-                </h2>
-
-
-                <p class="hero-description">
-
-                    Saya adalah mahasiswa yang memiliki
-                    ketertarikan pada dunia web development
-                    dan teknologi. Saya senang membuat website
-                    yang modern, responsive, dan mudah digunakan.
-
+                <h2>Web Developer</h2>
+                <p class="hero-description" data-i18n="heroDesc">
+                    Saya adalah mahasiswa yang memiliki ketertarikan pada dunia web development dan teknologi. Saya senang membuat website yang modern, responsive, dan mudah digunakan.
                 </p>
-
-
-                <!-- BUTTON -->
-
                 <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="btn btn-primary">
-
+                    <a href="#projects" class="btn btn-primary" data-i18n="btnProjects">
                         View My Projects
-
                         <i class="fa-solid fa-arrow-right"></i>
-
                     </a>
-
-
-                    <a
-                        href="#contact"
-                        class="btn btn-outline">
-
-                        Contact Me
-
-                    </a>
-
+                    <a href="#contact" class="btn btn-outline" data-i18n="btnContact">Contact Me</a>
                 </div>
-
-
                 <div class="hero-stats">
-
-
                     <div class="stat-item">
-
-                        <strong>
-                            03+
-                        </strong>
-
-                        <span>
-                            Projects
-                        </span>
-
+                        <strong>03+</strong>
+                        <span data-i18n="statProjects">Projects</span>
                     </div>
-
-
                     <div class="stat-divider"></div>
-
-
                     <div class="stat-item">
-
-                        <strong>
-                            06+
-                        </strong>
-
-                        <span>
-                            Technologies
-                        </span>
-
+                        <strong>06+</strong>
+                        <span data-i18n="statTech">Technologies</span>
                     </div>
-
-
                     <div class="stat-divider"></div>
-
-
                     <div class="stat-item">
-
-                        <strong>
-                            1+
-                        </strong>
-
-                        <span>
-                            Years Learning
-                        </span>
-
+                        <strong>1+</strong>
+                        <span data-i18n="statYears">Years Learning</span>
                     </div>
-
-
                 </div>
-
-
             </div>
-
-
+            
             <div class="hero-image reveal">
-
-
                 <div class="hero-glow"></div>
-
-
-                <!-- FOTO PROFIL -->
-
                 <div class="profile-photo">
-
-                    <img
-                        src="assets/profile.jpg"
-                        alt="Foto Fajar Saputra">
-
+                    <img src="assets/profile.jpg" alt="Foto Fajar Saputra">
                 </div>
-
-
-                <!-- HTML BADGE -->
-
-                <div class="tech-badge html-badge">
-
-                    <i class="fa-brands fa-html5"></i>
-
-                </div>
-
-
-                <!-- PHP BADGE -->
-
-                <div class="tech-badge php-badge">
-
-                    <i class="fa-brands fa-php"></i>
-
-                </div>
-
-
-                <!-- JAVASCRIPT BADGE -->
-
-                <div class="tech-badge js-badge">
-
-                    <i class="fa-brands fa-js"></i>
-
-                </div>
-
-
+                <div class="tech-badge html-badge"><i class="fa-brands fa-html5"></i></div>
+                <div class="tech-badge php-badge"><i class="fa-brands fa-php"></i></div>
+                <div class="tech-badge js-badge"><i class="fa-brands fa-js"></i></div>
             </div>
-
-
         </div>
-
-
     </div>
-
-
 </section>
-
 
 <!-- =========================================================
      ABOUT
 ========================================================= -->
-
-<section
-    class="about section"
-    id="about">
-
-
+<section class="about section" id="about">
     <div class="container">
-
-
         <div class="about-grid">
-
-
-            <!-- FOTO -->
-
             <div class="about-image reveal">
-
-
                 <div class="about-image-glow"></div>
-
-
-                <img
-                    src="assets/profile.jpg"
-                    alt="Fajar Saputra">
-
-
+                <img src="assets/profile.jpg" alt="Fajar Saputra">
             </div>
-
-
-
-            <!-- CONTENT -->
-
+            
             <div class="about-content reveal">
-
-
                 <div class="section-heading">
-
-
-                    <span>
-                        ABOUT ME
-                    </span>
-
-
-                    <h2>
-                        Mengenal Saya
-                    </h2>
-
-
+                    <span>ABOUT ME</span>
+                    <h2 data-i18n="aboutTitle">Mengenal Saya</h2>
                 </div>
-
-
-                <p>
-
-                    Halo, saya
-                    <strong>Fajar Saputra</strong>.
-
-                    Saya adalah mahasiswa yang memiliki
-                    ketertarikan pada dunia web development
-                    dan teknologi.
-
-                </p>
-
-
-                <p>
-
-                    Saya senang mempelajari bagaimana sebuah
-                    website dirancang, dikembangkan, dan dibuat
-                    agar memiliki tampilan yang modern,
-                    responsive, serta mudah digunakan.
-
-                </p>
-
-
-                <p>
-
-                    Selama belajar web development, saya telah
-                    mengerjakan beberapa project seperti website
-                    sekolah, website UMKM, website ekspedisi,
-                    dan berbagai project berbasis HTML, CSS,
-                    JavaScript, PHP, dan MySQL.
-
-                </p>
-
-
-
-                <!-- ABOUT INFORMATION -->
-
+                <p data-i18n="aboutP1">Halo, saya <strong>Fajar Saputra</strong>. Saya adalah mahasiswa yang memiliki ketertarikan pada dunia web development dan teknologi.</p>
+                <p data-i18n="aboutP2">Saya senang mempelajari bagaimana sebuah website dirancang, dikembangkan, dan dibuat agar memiliki tampilan yang modern, responsive, serta mudah digunakan.</p>
+                <p data-i18n="aboutP3">Selama belajar web development, saya telah mengerjakan beberapa project seperti website sekolah, website UMKM, website ekspedisi, dan berbagai project berbasis HTML, CSS, JavaScript, PHP, dan MySQL.</p>
+                
                 <div class="about-info">
-
-
                     <div class="about-info-item">
-
-                        <span>
-                            Nama
-                        </span>
-
-                        <strong>
-                            Fajar Saputra
-                        </strong>
-
+                        <span data-i18n="infoName">Nama</span>
+                        <strong>Fajar Saputra</strong>
                     </div>
-
-
                     <div class="about-info-item">
-
-                        <span>
-                            Role
-                        </span>
-
-                        <strong>
-                            Web Developer
-                        </strong>
-
+                        <span data-i18n="infoRole">Role</span>
+                        <strong>Web Developer</strong>
                     </div>
-
-
                     <div class="about-info-item">
-
-                        <span>
-                            Focus
-                        </span>
-
-                        <strong>
-                            Web Development
-                        </strong>
-
+                        <span data-i18n="infoFocus">Focus</span>
+                        <strong>Web Development</strong>
                     </div>
-
-
                 </div>
-
-
-
-                <!-- ABOUT BUTTONS -->
-
+                
                 <div class="about-buttons">
-
-
-                    <a
-                        href="#contact"
-                        class="btn btn-primary">
-
+                    <a href="#contact" class="btn btn-primary" data-i18n="btnContactHub">
                         Hubungi Saya
-
                         <i class="fa-solid fa-arrow-right"></i>
-
                     </a>
-
-
-                    <a
-                        href="#skills"
-                        class="btn btn-outline">
-
-                        Lihat Skills
-
-                    </a>
-
-
+                    <a href="#skills" class="btn btn-outline" data-i18n="btnSeeSkills">Lihat Skills</a>
                 </div>
-
-
             </div>
-
-
         </div>
-
-
     </div>
-
-
 </section>
-
-
 
 <!-- =========================================================
      SKILLS
 ========================================================= -->
-
-<section
-    class="skills section"
-    id="skills">
-
-
+<section class="skills section" id="skills">
     <div class="container">
-
-
         <div class="section-heading reveal">
-
-
-            <span>
-                MY SKILLS
-            </span>
-
-
-            <h2>
-                Teknologi yang Saya Pelajari
-            </h2>
-
-
-            <p>
-
-                Beberapa teknologi dan tools yang saya gunakan
-                dalam proses belajar dan membuat project website.
-
-            </p>
-
-
+            <span>MY SKILLS</span>
+            <h2 data-i18n="skillsTitle">Teknologi yang Saya Pelajari</h2>
+            <p data-i18n="skillsDesc">Beberapa teknologi dan tools yang saya gunakan dalam proses belajar dan membuat project website.</p>
         </div>
-
-
-
+        
         <div class="skills-grid">
-
-
-            <!-- HTML -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-brands fa-html5"></i>
-
-                <h3>
-                    HTML
-                </h3>
-
-                <p>
-
-                    Digunakan untuk membangun struktur
-                    dan elemen dasar sebuah website.
-
-                </p>
-
+                <h3>HTML</h3>
+                <p data-i18n="skillHtml">Digunakan untuk membangun struktur dan elemen dasar sebuah website.</p>
             </div>
-
-
-
-            <!-- CSS -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-brands fa-css3-alt"></i>
-
-                <h3>
-                    CSS
-                </h3>
-
-                <p>
-
-                    Digunakan untuk membuat tampilan website
-                    menjadi modern, menarik, dan responsive.
-
-                </p>
-
+                <h3>CSS</h3>
+                <p data-i18n="skillCss">Digunakan untuk membuat tampilan website menjadi modern, menarik, dan responsive.</p>
             </div>
-
-
-
-            <!-- JAVASCRIPT -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-brands fa-js"></i>
-
-                <h3>
-                    JavaScript
-                </h3>
-
-                <p>
-
-                    Digunakan untuk membuat website menjadi
-                    interaktif dan memiliki berbagai fungsi.
-
-                </p>
-
+                <h3>JavaScript</h3>
+                <p data-i18n="skillJs">Digunakan untuk membuat website menjadi interaktif dan memiliki berbagai fungsi.</p>
             </div>
-
-
-
-            <!-- PHP -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-brands fa-php"></i>
-
-                <h3>
-                    PHP
-                </h3>
-
-                <p>
-
-                    Digunakan untuk membangun website
-                    dinamis dan sistem berbasis server.
-
-                </p>
-
+                <h3>PHP</h3>
+                <p data-i18n="skillPhp">Digunakan untuk membangun website dinamis dan sistem berbasis server.</p>
             </div>
-
-
-
-            <!-- MYSQL -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-solid fa-database"></i>
-
-                <h3>
-                    MySQL
-                </h3>
-
-                <p>
-
-                    Digunakan untuk menyimpan dan mengelola
-                    data pada aplikasi website.
-
-                </p>
-
+                <h3>MySQL</h3>
+                <p data-i18n="skillMysql">Digunakan untuk menyimpan dan mengelola data pada aplikasi website.</p>
             </div>
-
-
-
-            <!-- GITHUB -->
-
             <div class="skill-card reveal">
-
                 <i class="fa-brands fa-github"></i>
-
-                <h3>
-                    Git & GitHub
-                </h3>
-
-                <p>
-
-                    Digunakan untuk version control,
-                    menyimpan source code, dan mengelola project.
-
-                </p>
-
+                <h3>Git & GitHub</h3>
+                <p data-i18n="skillGit">Digunakan untuk version control, menyimpan source code, dan mengelola project.</p>
             </div>
-
-
         </div>
-
-
     </div>
-
-
 </section>
 
+<!-- =========================================================
+     SERVICES / PRICING
+========================================================= -->
+<section class="services section" id="services">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span>MY SERVICES</span>
+            <h2 data-i18n="servicesTitle">Jasa Pembuatan Website Profesional & Super Cepat untuk Bisnis Anda</h2>
+            <p data-i18n="servicesDesc">Bantu bisnis Anda lebih kredibel di internet dengan website standar tinggi. Pilih layanan yang paling sesuai dengan target pasar Anda.</p>
+        </div>
 
+        <!-- SELLING POINTS -->
+        <div class="selling-points-grid reveal">
+            <div class="selling-point-card">
+                <div class="selling-icon"><i class="fa-solid fa-code"></i></div>
+                <h3 data-i18n="sp1Title">Tanpa Plugin Berat</h3>
+                <p data-i18n="sp1Desc">Dibuat dengan koding murni (HTML/CSS/JS) sehingga loading website sangat kilat.</p>
+            </div>
+            <div class="selling-point-card">
+                <div class="selling-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3 data-i18n="sp2Title">100% Mobile-Friendly</h3>
+                <p data-i18n="sp2Desc">Tampilan dipastikan rapi saat dibuka lewat smartphone klien maupun calon pembeli.</p>
+            </div>
+            <div class="selling-point-card">
+                <div class="selling-icon"><i class="fa-solid fa-tags"></i></div>
+                <h3 data-i18n="sp3Title">Harga Transparan</h3>
+                <p data-i18n="sp3Desc">Tidak ada biaya tersembunyi. Investasi yang sangat pas untuk kemajuan bisnis Anda.</p>
+            </div>
+        </div>
+
+        <!-- PRICING CARDS -->
+        <div class="services-grid">
+            <!-- PAKET 1: LANDING PAGE -->
+            <article class="service-card reveal">
+                <div class="service-top">
+                    <span class="service-category">STARTER</span>
+                    <i class="fa-solid fa-bolt service-icon-top"></i>
+                </div>
+                <h3>Landing Page</h3>
+                <div class="service-price">
+                    <span data-i18n="priceStarter">Rp 300rb</span> 
+                    <span data-i18n="projUnit" style="font-size: 13px; font-weight: 500; color: #666666;">/ project</span>
+                </div>
+                <p class="service-desc" data-i18n="pkg1Desc">Fokus pada penjualan! Sangat cocok untuk promosi 1 produk spesifik, event, atau kampanye iklan.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg1f1">1 Halaman panjang fokus konversi</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg1f2">Desain kustom sesuai identitas brand</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg1f3">Integrasi tombol Chat WhatsApp</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg1f4">Loading kilat (< 3 detik)</span></li>
+                </ul>
+                <div class="service-action">
+                    <button type="button" class="btn btn-outline open-modal-btn" data-target="modal-landing" style="width: 100%;" data-i18n="btnDetail">
+                        Lihat Detail Lengkap
+                    </button>
+                </div>
+            </article>
+
+            <!-- PAKET 2: COMPANY PROFILE -->
+            <article class="service-card service-card-popular reveal">
+                <div class="popular-badge" data-i18n="popularBadge">Paling Diminati</div>
+                <div class="service-top">
+                    <span class="service-category">BUSINESS</span>
+                    <i class="fa-solid fa-globe service-icon-top"></i>
+                </div>
+                <h3>Company Profile</h3>
+                <div class="service-price">
+                    <span data-i18n="priceCompany">Rp 700rb</span> 
+                    <span data-i18n="projUnit" style="font-size: 13px; font-weight: 500; color: #666666;">/ project</span>
+                </div>
+                <p class="service-desc" data-i18n="pkg2Desc">Tingkatkan kredibilitas & kepercayaan klien. Ideal untuk PT, CV, instansi, atau kafe elit.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg2f1">3–5 Halaman Profil Detail</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg2f2">Fitur 2 Bahasa (Indo & Inggris)</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg2f3">Formulir kontak & Google Maps terintegrasi</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg2f4">Optimasi SEO Dasar untuk Google</span></li>
+                </ul>
+                <div class="service-action">
+                    <button type="button" class="btn btn-primary open-modal-btn" data-target="modal-company" style="width: 100%;" data-i18n="btnDetail">
+                        Lihat Detail Lengkap
+                    </button>
+                </div>
+            </article>
+
+            <!-- PAKET 3: CUSTOM WEB APP -->
+            <article class="service-card reveal">
+                <div class="service-top">
+                    <span class="service-category">ADVANCED</span>
+                    <i class="fa-solid fa-layer-group service-icon-top"></i>
+                </div>
+                <h3>Custom Web App</h3>
+                <div class="service-price">
+                    <span data-i18n="priceStart">Mulai</span> 
+                    <span data-i18n="priceCustom">Rp 1,5jt</span> 
+                    <span data-i18n="projUnit" style="font-size: 13px; font-weight: 500; color: #666666;">/ project</span>
+                </div>
+                <p class="service-desc" data-i18n="pkg3Desc">Solusi kustom untuk digitalisasi sistem operasional, booking tiket, atau manajemen pendataan.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg3f1">Database & Sistem Alur Kerja Khusus</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg3f2">Dukungan Multi-Bahasa (ID/EN)</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg3f3">Panel Admin (Dashboard) interaktif</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="pkg3f4">Pemrograman server (PHP/MySQL)</span></li>
+                </ul>
+                <div class="service-action">
+                    <button type="button" class="btn btn-outline open-modal-btn" data-target="modal-custom" style="width: 100%;" data-i18n="btnDetail">
+                        Lihat Detail Lengkap
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <!-- MAINTENANCE BANNER -->
+        <div class="maintenance-banner reveal">
+            <div class="maintenance-info">
+                <div class="service-top">
+                    <span class="service-category" style="color: #aaaaaa;">ADD-ON SERVICE</span>
+                </div>
+                <h3 data-i18n="maintTitle">Jasa Perawatan (Maintenance) Website</h3>
+                <p data-i18n="maintDesc"><strong>Anda fokus urus bisnis, biar saya yang mengurus teknis.</strong> Pastikan website Anda selalu aktif, aman, dan kontennya ter-update tanpa perlu pusing mikirin server dan kodingan.</p>
+                <ul class="maintenance-features">
+                    <li><i class="fa-solid fa-arrows-rotate"></i> <span data-i18n="maintF1">Update Teks/Gambar Rutin</span></li>
+                    <li><i class="fa-solid fa-server"></i> <span data-i18n="maintF2">Perpanjangan Server Hosting & Domain</span></li>
+                    <li><i class="fa-solid fa-shield-halved"></i> <span data-i18n="maintF3">Backup Data & Pemantauan Keamanan</span></li>
+                </ul>
+            </div>
+            
+            <div class="maintenance-price-action">
+                <div class="service-price" style="margin-bottom: 15px; color: #ffffff; font-size: 28px; font-weight: 800; display: flex; align-items: baseline; gap: 5px;">
+                    <span data-i18n="priceMaint">Rp 150rb</span> 
+                    <span style="font-size: 13px; font-weight: 500; color: #888888;" data-i18n="maintUnit">/ bulan</span>
+                </div>
+                <div style="display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap;">
+                    <a href="mailto:fajarsaputra2995@gmail.com?subject=Langganan%20Maintenance%20Website" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="border-color: #444; min-height: 40px; padding: 0 15px; font-size: 11px;">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://wa.me/628131740814?text=Halo,%20Fajar.%20Saya%20tertarik%20dengan%20Jasa%20Maintenance%20Website%20Bulanan" 
+                       class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="border-color: #444; min-height: 40px; padding: 0 15px; font-size: 11px;" data-i18n="btnSubscribe">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- =========================================================
      PROJECTS
 ========================================================= -->
-
-<section
-    class="projects section"
-    id="projects">
-
-
+<section class="projects section" id="projects">
     <div class="container">
-
-
         <div class="section-heading reveal">
-
-
-            <span>
-                MY PROJECTS
-            </span>
-
-
-            <h2>
-                Project Saya
-            </h2>
-
-
-            <p>
-
-                Beberapa website yang telah saya buat
-                selama belajar dan mengembangkan kemampuan
-                di bidang web development.
-
-            </p>
-
-
+            <span>MY PROJECTS</span>
+            <h2 data-i18n="projectsTitle">Project Saya</h2>
+            <p data-i18n="projectsDesc">Beberapa website yang telah saya buat selama belajar dan mengembangkan kemampuan di bidang web development.</p>
         </div>
-
-
-
+        
         <div class="projects-grid">
-
             <article class="project-card reveal">
-
-
                 <div class="project-image">
-
-
-                    <img
-                        src="assets/project-ppdb.jpg"
-                        alt="contoh ppdb">
-
-
+                    <img src="assets/project-ppdb.jpg" alt="contoh ppdb">
                     <div class="project-overlay">
-
-
-                        <a
-                            href="https://contohppdb.netlify.app/"
-                            class="project-preview"
-                            aria-label="Lihat project SMK Sultan Agung">
-
+                        <a href="https://contohppdb.netlify.app/" class="project-preview" aria-label="Lihat project SMK Sultan Agung">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                         </a>
-
-
                     </div>
-
-
                 </div>
-
-
-
                 <div class="project-content">
-
-
                     <div class="project-top">
-
-
-                        <span class="project-category">
-
-                            SCHOOL WEBSITE
-
-                        </span>
-
-
-                        <span class="project-number">
-
-                            01
-
-                        </span>
-
-
+                        <span class="project-category">SCHOOL WEBSITE</span>
+                        <span class="project-number">01</span>
                     </div>
-
-
-
-                    <h3>
-
-                        contoh ppdb
-
-                    </h3>
-
-
-
-                    <p>
-
-                        Website profil sekolah dengan tampilan
-                        modern untuk memperkenalkan sekolah,
-                        program pendidikan, informasi siswa,
-                        dan sistem registrasi.
-
-                    </p>
-
-
-
+                    <h3>contoh ppdb</h3>
+                    <p data-i18n="proj1Desc">Website profil sekolah dengan tampilan modern untuk memperkenalkan sekolah, program pendidikan, informasi siswa, dan sistem registrasi.</p>
                     <div class="project-tech">
-
-                        <span>
-                            HTML
-                        </span>
-
-                        <span>
-                            CSS
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
                     </div>
-
-
-
                     <div class="project-actions">
-
-
-                        <a
-                            href="https://contohppdb.netlify.app/"
-                            class="project-btn project-btn-primary">
-
-                            Live Demo
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+                        <a href="https://contohppdb.netlify.app/" class="project-btn project-btn-primary">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-
+                    </div>
                 </div>
-
-
             </article>
 
-
             <article class="project-card reveal">
-
-
                 <div class="project-image">
-
-
-                    <img
-                        src="assets/project-raffiki.jpg"
-                        alt="Website RAFFIKI">
-
-
+                    <img src="assets/project-raffiki.jpg" alt="Website RAFFIKI">
                     <div class="project-overlay">
-
-
-                        <a
-                            href="https://kreasibunda.netlify.app/"
-                            class="project-preview"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Lihat project RAFFIKI">
-
+                        <a href="https://kreasibunda.netlify.app/" class="project-preview" target="_blank" rel="noopener noreferrer" aria-label="Lihat project RAFFIKI">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                         </a>
-
-
                     </div>
-
-
                 </div>
-
-
-
                 <div class="project-content">
-
-
                     <div class="project-top">
-
-
-                        <span class="project-category">
-
-                            UMKM WEBSITE
-
-                        </span>
-
-
-                        <span class="project-number">
-
-                            02
-
-                        </span>
-
-
+                        <span class="project-category">UMKM WEBSITE</span>
+                        <span class="project-number">02</span>
                     </div>
-
-
-
-                    <h3>
-
-                       Dapur Kreasi Bunda Raffiki
-
-                    </h3>
-
-
-
-                    <p>
-
-                        Website UMKM untuk memperkenalkan produk
-                        makanan khas Cirebon, menampilkan katalog
-                        produk, galeri, informasi usaha, dan
-                        pemesanan melalui WhatsApp.
-
-                    </p>
-
-
-
+                    <h3>Dapur Kreasi Bunda Raffiki</h3>
+                    <p data-i18n="proj2Desc">Website UMKM untuk memperkenalkan produk makanan khas Cirebon, menampilkan katalog produk, galeri, informasi usaha, dan pemesanan melalui WhatsApp.</p>
                     <div class="project-tech">
-
-                        <span>
-                            HTML
-                        </span>
-
-                        <span>
-                            CSS
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
                     </div>
-
-
-
                     <div class="project-actions">
-
-
-                        <a
-                            href="https://kreasibunda.netlify.app/"
-                            class="project-btn project-btn-primary"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            Live Demo
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+                        <a href="https://kreasibunda.netlify.app/" class="project-btn project-btn-primary" target="_blank" rel="noopener noreferrer">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-
+                    </div>
                 </div>
-
-
             </article>
 
-
             <article class="project-card reveal">
-
-
                 <div class="project-image">
-
-
-                    <img
-                        src="assets/project-bus.jpg"
-                        alt="Website Gunung Siang Arjuna Mabes">
-
-
+                    <img src="assets/project-bus.jpg" alt="Website Gunung Siang Arjuna Mabes">
                     <div class="project-overlay">
-
-
-                        <a
-                            href="https://gunungsiangarjunamabes.vercel.app/"
-                            class="project-preview"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Lihat project Gunung Siang Arjuna Mabes">
-
+                        <a href="https://gunungsiang.netlify.app/" class="project-preview" target="_blank" rel="noopener noreferrer" aria-label="Lihat project Gunung Siang Arjuna Mabes">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                         </a>
-
-
                     </div>
-
-
                 </div>
-
-
-
                 <div class="project-content">
-
-
                     <div class="project-top">
-
-
-                        <span class="project-category">
-
-                           Transportation Web App / Booking System
-
-                        </span>
-
-
-                        <span class="project-number">
-
-                            03
-
-                        </span>
-
-
+                        <span class="project-category">Transportation Web App</span>
+                        <span class="project-number">03</span>
                     </div>
-
-
-
-                    <h3>
-
-                        Gunung Siang Arjuna Mabes
-
-                    </h3>
-
-
-
-                    <p>
-
-                        Gunung Siang Arjuna Mabes adalah website landing page dan sistem booking
-                        kursi via online/digital modern yang dirancang khusus untuk layanan transportasi bus 
-                        rute Kuningan – Jakarta (Mangga Besar) menggunakan New Armada R25 dari PT.Putra Luragung Sakti
-                        Website ini dikembangkan dengan konsep Dark & Modern Aesthetics yang elegan, responsif, 
-                        serta berfokus pada kemudahan pengalaman pengguna (user experience)
-                    </p>
-
-
-
+                    <h3>Gunung Siang Arjuna Mabes</h3>
+                    <p data-i18n="proj3Desc">Gunung Siang Arjuna Mabes adalah website landing page dan sistem booking kursi via online/digital modern yang dirancang khusus untuk layanan transportasi bus rute Kuningan – Jakarta (Mangga Besar).</p>
                     <div class="project-tech">
-
-                        <span>
-                            HTML
-                        </span>
-
-                        <span>
-                            CSS
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                        <span>
-                            PHP
-                        </span>
-
-                        <span>
-                            MySQL
-                        </span>
-
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
                     </div>
-
-
-
                     <div class="project-actions">
-
-
-                        <a
-                            href="https://gunungsiangarjunamabes.vercel.app/"
-                            class="project-btn project-btn-primary"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            Live Demo
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+                        <a href="https://gunungsiang.netlify.app/" class="project-btn project-btn-primary" target="_blank" rel="noopener noreferrer">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-
+                    </div>
                 </div>
-
-
             </article>
-
-
         </div>
 
         <div class="projects-more reveal">
-
-
-            <a
-                href="#contact"
-                class="btn btn-outline">
-
-                Let's Work Together
-
-                <i class="fa-solid fa-arrow-right"></i>
-
+            <a href="#contact" class="btn btn-outline" data-i18n="btnWorkTogether">
+                Let's Work Together <i class="fa-solid fa-arrow-right"></i>
             </a>
-
-
         </div>
-
-
     </div>
-
-
 </section>
-
-
 
 <!-- =========================================================
      CONTACT
 ========================================================= -->
-
-<section
-    class="contact section"
-    id="contact">
-
-
+<section class="contact section" id="contact">
     <div class="container">
-
-
         <div class="section-heading reveal">
-
-
-            <span>
-                CONTACT
-            </span>
-
-
-            <h2>
-                Mari Berkolaborasi
-            </h2>
-
-
-            <p>
-
-                Jika kamu memiliki project atau ingin
-                berdiskusi mengenai website, silakan
-                hubungi saya.
-
-            </p>
-
-
+            <span>CONTACT</span>
+            <h2 data-i18n="contactTitle">Mari Berkolaborasi</h2>
+            <p data-i18n="contactDesc">Jika kamu memiliki project atau ingin berdiskusi mengenai website, silakan hubungi saya.</p>
         </div>
-
-
-
+        
         <div class="contact-grid">
-
-
-            <!-- CONTACT INFORMATION -->
-
             <div class="contact-info reveal">
-
-
-                <h3>
-                    Hubungi Saya
-                </h3>
-
-
-                <p>
-
-                    Saya terbuka untuk berdiskusi mengenai
-                    project website, pengembangan web,
-                    maupun kesempatan untuk belajar dan
-                    berkembang bersama.
-
-                </p>
-
-
-
+                <h3 data-i18n="contactInfoTitle">Hubungi Saya</h3>
+                <p data-i18n="contactInfoDesc">Saya terbuka untuk berdiskusi mengenai project website, pengembangan web, maupun kesempatan untuk belajar dan berkembang bersama.</p>
                 <div class="contact-list">
-
                     <div class="contact-item">
-
-
-                        <div class="contact-icon">
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <span></span>
-
-                            <a href="mailto:fajarsaputra2995@gmail.com" style="color: inherit; text-decoration: none;">fajarsaputra2995@gmail.com</a>
-
-                        </div>
-
-
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div><a href="mailto:fajarsaputra2995@gmail.com" style="color: inherit; text-decoration: none;">fajarsaputra2995@gmail.com</a></div>
                     </div>
-
                     <div class="contact-item">
-
-
-                        <div class="contact-icon">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                        </div>
-
-
-                        <div>
-
-                            <span></span>
-
-                            <a href="https://wa.me/628131740814" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">08131740814</a>
-
-                        </div>
-
-
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div><a href="https://wa.me/628131740814" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">08131740814</a></div>
                     </div>
-
-
                     <div class="contact-item">
-
-
-                        <div class="contact-icon">
-
-                            <i class="fa-solid fa-location-dot"></i>
-
-                        </div>
-
-
-                        <span style="color: #ffffff !important;">
-
-                            Cirebon,Indonesia
-
-                        </span>
-
-
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <span style="color: #ffffff !important;">Cirebon, Indonesia</span>
                     </div>
-
-
                 </div>
-
-
-
-                <!-- SOCIAL -->
-
-                <div class="social-links">
-
-
-                    <a
-                        href="https://instagram.com/jars_295"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://wa.me/628131740814"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="WhatsApp">
-
-                        <i class="fa-brands fa-whatsapp"></i>
-
-                    </a>
-
-
-                </div>
-
-
+                
+               <div class="social-links">
+    <a href="https://instagram.com/jars_295" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:fajarsaputra2995@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://wa.me/628131740814" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
             </div>
 
-
-
-            <!-- CONTACT FORM -->
-
-            <form
-                class="contact-form reveal"
-                action="#"
-                method="post">
-
-
+            <form class="contact-form reveal" action="#" method="post">
                 <div class="form-group">
-
-
-                    <label for="name">
-
-                        Nama
-
-                    </label>
-
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Masukkan nama kamu"
-                        required>
-
-
+                    <label for="name" data-i18n="formName">Nama</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
                 </div>
-
-
-
                 <div class="form-group">
-
-
-                    <label for="email">
-
-                        Email
-
-                    </label>
-
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Masukkan email kamu"
-                        required>
-
-
+                    <label for="email" data-i18n="formEmail">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
                 </div>
-
-
-
                 <div class="form-group">
-
-
-                    <label for="message">
-
-                        Pesan
-
-                    </label>
-
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tulis pesan kamu..."
-                        required></textarea>
-
-
+                    <label for="message" data-i18n="formMessage">Pesan</label>
+                    <textarea id="message" name="message" placeholder="Tulis pesan kamu..." required></textarea>
                 </div>
-
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary">
-
-
-                    Kirim Pesan
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-
+                <button type="submit" class="btn btn-primary" data-i18n="formSubmit">
+                    Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
                 </button>
-
-
             </form>
-
-
         </div>
-
-
     </div>
-
-
 </section>
 
-
 </main>
-
-
 
 <!-- =========================================================
      FOOTER
 ========================================================= -->
-
 <footer class="footer">
-
-
     <div class="container">
-
-
         <div class="footer-content">
-
-
-            <p>
-
-                © 2026 Fajar Saputra.
-                All Rights Reserved.
-
-            </p>
-
-
-            <p>
-
-                Built with HTML, CSS & JavaScript.
-
-            </p>
-
-
+            <p>© 2026 Fajar Saputra. All Rights Reserved.</p>
+            <p data-i18n="footerText">Built with HTML, CSS & JavaScript.</p>
         </div>
-
-
     </div>
-
-
 </footer>
 
-
-
 <!-- =========================================================
-     BACK TO TOP
+     MODAL / POP-UP DETAIL LAYANAN
 ========================================================= -->
 
-<button
-    class="back-to-top"
-    type="button"
-    aria-label="Kembali ke atas">
+<!-- Modal Landing Page -->
+<div class="modal-overlay" id="modal-landing">
+    <div class="modal-content">
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Detail: Landing Page</h3>
+        <div class="modal-body">
+            <p>Landing page adalah satu halaman panjang yang didesain khusus untuk meningkatkan konversi (penjualan/pendaftaran). Sangat cocok untuk Anda yang sedang beriklan di Facebook/Instagram Ads.</p>
+            <h4>Apa yang Anda dapatkan?</h4>
+            <ul>
+                <li>Desain kustom eksklusif (Bukan template pasaran)</li>
+                <li>Copywriting (Teks) yang menjual dan rapi</li>
+                <li>Tombol Call-to-Action (CTA) langsung ke WhatsApp</li>
+                <li>Revisi desain hingga 2 kali</li>
+            </ul>
+            <h4>Proses Pengerjaan:</h4>
+            <p>1 - 3 Hari Kerja setelah materi (foto & teks) dikirimkan.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mailto:fajarsaputra2995@gmail.com?subject=Pesanan%20Landing%20Page%20-%20Fajar%20Portfolio" class="btn btn-outline" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://wa.me/628131740814?text=Halo,%20Fajar.%20Saya%20mau%20pesan%20Landing%20Page" class="btn btn-primary" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
 
+<!-- Modal Company Profile -->
+<div class="modal-overlay" id="modal-company">
+    <div class="modal-content">
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Detail: Company Profile</h3>
+        <div class="modal-body">
+            <p>Website resmi untuk perusahaan, instansi, atau bisnis yang ingin membangun kredibilitas dan kepercayaan di mata calon klien atau investor.</p>
+            <h4>Apa yang Anda dapatkan?</h4>
+            <ul>
+                <li>Hingga 5 Halaman (Beranda, Tentang Kami, Layanan, Galeri, Kontak)</li>
+                <li>Fitur 2 Bahasa (Indonesia & Inggris)</li>
+                <li>Integrasi Google Maps & Formulir Kontak Email</li>
+                <li>Optimasi SEO dasar agar mudah dicari di Google</li>
+            </ul>
+            <h4>Proses Pengerjaan:</h4>
+            <p>5 - 7 Hari Kerja setelah materi lengkap diterima.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mailto:fajarsaputra2995@gmail.com?subject=Pesanan%20Company%20Profile%20-%20Fajar%20Portfolio" class="btn btn-outline" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://wa.me/628131740814?text=Halo,%20Fajar.%20Saya%20mau%20pesan%20Company%20Profile" class="btn btn-primary" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Custom Web App -->
+<div class="modal-overlay" id="modal-custom">
+    <div class="modal-content">
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Detail: Custom Web App</h3>
+        <div class="modal-body">
+            <p>Pembuatan website dengan sistem khusus (Database) untuk mempermudah operasional bisnis Anda, seperti sistem kasir, pencatatan, pendataan, atau booking online.</p>
+            <h4>Apa yang Anda dapatkan?</h4>
+            <ul>
+                <li>Sistem Database MySQL & Backend PHP</li>
+                <li>Halaman Dashboard Admin untuk kelola data</li>
+                <li>Keamanan data terenkripsi</li>
+                <li>Maintenance & perbaikan bug gratis selama 1 bulan</li>
+            </ul>
+            <h4>Proses Pengerjaan:</h4>
+            <p>Mulai dari 14 Hari Kerja (tergantung tingkat kerumitan sistem yang dibuat).</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mailto:fajarsaputra2995@gmail.com?subject=Konsultasi%20Custom%20Web%20App%20-%20Fajar%20Portfolio" class="btn btn-outline" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://wa.me/628131740814?text=Halo,%20Fajar.%20Saya%20ingin%20konsultasi%20Custom%20Web" class="btn btn-primary" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- BACK TO TOP BUTTON -->
+<button class="back-to-top" type="button" aria-label="Kembali ke atas">
     <i class="fa-solid fa-arrow-up"></i>
-
 </button>
 
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-
-/* =========================================================
-   NAVBAR SCROLL
-========================================================= */
-
-const navbar = document.querySelector(".navbar");
-
-
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 50) {
-
-        navbar.classList.add("scrolled");
-
-    } else {
-
-        navbar.classList.remove("scrolled");
-
-    }
-
-});
-
-
-
-/* =========================================================
-   MOBILE MENU
-========================================================= */
-
-const menuToggle =
-    document.querySelector(".menu-toggle");
-
-const navMenu =
-    document.querySelector(".nav-menu");
-
-
-menuToggle.addEventListener("click", function () {
-
-    navMenu.classList.toggle("show");
-
-
-    const icon =
-        menuToggle.querySelector("i");
-
-
-    if (navMenu.classList.contains("show")) {
-
-        icon.classList.remove("fa-bars");
-
-        icon.classList.add("fa-xmark");
-
-    } else {
-
-        icon.classList.remove("fa-xmark");
-
-        icon.classList.add("fa-bars");
-
-    }
-
-});
-
-
-
-/* =========================================================
-   CLOSE MOBILE MENU
-========================================================= */
-
-const navLinks =
-    document.querySelectorAll(".nav-menu a");
-
-
-navLinks.forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        navMenu.classList.remove("show");
-
-
-        const icon =
-            menuToggle.querySelector("i");
-
-
-        icon.classList.remove("fa-xmark");
-
-        icon.classList.add("fa-bars");
-
-    });
-
-});
-
-
-
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
-
-const sections =
-    document.querySelectorAll("section[id]");
-
-
-window.addEventListener("scroll", function () {
-
-    let current = "";
-
-
-    sections.forEach(function (section) {
-
-        const sectionTop =
-            section.offsetTop - 150;
-
-        const sectionHeight =
-            section.offsetHeight;
-
-
-        if (
-            window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight
-        ) {
-
-            current =
-                section.getAttribute("id");
-
-        }
-
-    });
-
-
-    navLinks.forEach(function (link) {
-
-        link.classList.remove("active");
-
-
-        if (
-            link.getAttribute("href") === "#" + current
-        ) {
-
-            link.classList.add("active");
-
-        }
-
-    });
-
-});
-
-
-
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
-
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-
-const revealObserver =
-    new IntersectionObserver(
-
-        function (entries, observer) {
-
-            entries.forEach(function (entry) {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add(
-                        "reveal-show"
-                    );
-
-                    observer.unobserve(
-                        entry.target
-                    );
-
-                }
-
-            });
-
-        },
-
-        {
-            threshold: 0.12
-        }
-
-    );
-
-
-revealElements.forEach(function (element) {
-
-    revealObserver.observe(element);
-
-});
-
-
-
-/* =========================================================
-   BACK TO TOP
-========================================================= */
-
-const backToTop =
-    document.querySelector(".back-to-top");
-
-
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 500) {
-
-        backToTop.classList.add("show");
-
-    } else {
-
-        backToTop.classList.remove("show");
-
-    }
-
-});
-
-
-backToTop.addEventListener("click", function () {
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
-
-});
-
-
-document.addEventListener("click", function (event) {
-
-    if (
-        !navMenu.contains(event.target) &&
-        !menuToggle.contains(event.target)
-    ) {
-
-        navMenu.classList.remove("show");
-
-
-        const icon =
-            menuToggle.querySelector("i");
-
-
-        icon.classList.remove("fa-xmark");
-
-        icon.classList.add("fa-bars");
-
-    }
-
-});
-
-
-</script>
-
+<!-- File JavaScript Terpisah -->
+<script src="script.js?v=4"></script>
 
 </body>
-
 </html>
